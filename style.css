@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  color: #eee;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main container */
+#container {
+  flex: 1; /* take available space */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  width: 100%;
+  max-width: 1200px; /* ✅ use max-width instead of min-width */
+  box-sizing: border-box;
+}
+
+/* Controls panel */
+#controls {
+  width: 250px;
+  padding: 15px;
+  background: #2a2a2a;
+  border-radius: 8px;
+}
+
+#controls h2, #controls h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#controls label {
+  display: block;
+  margin: 8px 0;
+}
+
+/* Canvas wrapper */
+#canvasWrapper {
+  position: relative;
+  margin-left: 20px;
+}
+
+canvas {
+  background: #0f1326;
+  border: 2px solid #444;
+}
+
+#labelOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.object-label {
+  position: absolute;
+  color: white;
+  font: Arial 12px;
+  transform: translate(-50%, -50%);
+}
+
+/* Summary section always at bottom */
+#summary {
+  width: 100%;
+  margin-top: auto;
+  padding: 15px;
+  background: #222;
+  color: #eee;
+  border-top: 2px solid #444;
+  border-radius: 6px 6px 0 0;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+#summary h3 {
+  margin-top: 0;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  #controls {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #canvasWrapper {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .object-label {
+    font-size: 10px;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  #controls {
+    padding: 10px;
+  }
+
+  #controls h2 {
+    font-size: 16px;
+  }
+
+  #controls h3 {
+    font-size: 14px;
+  }
+
+  #controls label {
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  canvas {
+    border-width: 1px;
+  }
+
+  #summary {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

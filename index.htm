@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Physics Simulation Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="controls">
+      <h2>Interactive Physics Simulation Lab (Forces and Motion)</h2>
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+      <button id="newObjBtn">Add Object</button>
+
+      <h3>Objects</h3>
+      <select id="objectSelect"></select>
+
+      <label>Mass:
+        <input type="range" id="massInput" min="0.5" max="10" step="0.1" value="1">
+        <span id="massValue">1.0</span>
+      </label>
+
+      <label>Friction (damping):
+        <input type="range" id="frictionInput" min="0" max="1" step="0.01" value="0.1">
+        <span id="frictionValue">0.10</span>
+      </label>
+
+      <label>
+        <input type="checkbox" id="gravityToggle" checked> Gravity
+      </label>
+
+      <h3>Apply Force (N)</h3>
+      <label>X:
+        <input type="range" id="forceX" min="-500" max="500" step="10" value="0">
+        <span id="forceXValue">0</span>
+      </label>
+      <label>Y:
+        <input type="range" id="forceY" min="-500" max="500" step="10" value="0">
+        <span id="forceYValue">0</span>
+      </label>
+      <button id="applyForceBtn">Apply Force</button>
+
+      <h3>Object Info</h3>
+      <pre id="objectInfo">No object selected</pre>
+    </div>
+
+    <div id="canvasWrapper">
+      <canvas id="glCanvas" width="800" height="600"></canvas>
+      <div id="labelOverlay"></div>
+    </div>
+
+    <div id="summary"></div>
+
+  </div>
+
+  <!-- <script src="state.js"></script> -->
+  <script src="main.js"></script>
+</body>
+</html>
