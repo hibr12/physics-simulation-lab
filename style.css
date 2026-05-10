@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #1a1a1a;
   color: #eee;
   margin: 0;
@@ -60,7 +60,7 @@ canvas {
 .object-label {
   position: absolute;
   color: white;
-  font: Arial 12px;
+  font: 'Roboto', Arial 12px;
   transform: translate(-50%, -50%);
 }
 
@@ -73,7 +73,7 @@ canvas {
   color: #eee;
   border-top: 2px solid #444;
   border-radius: 6px 6px 0 0;
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
