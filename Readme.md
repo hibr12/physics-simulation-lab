@@ -1,7 +1,7 @@
 # Interactive Physics Simulation Lab
 
 An interactive browser-based physics sandbox that demonstrates **forces and motion** using HTML, CSS, and JavaScript.  
-Users can add objects, apply forces, toggle gravity, adjust friction, and observe how objects move in real time.
+Users can add objects, apply forces, toggle gravity, adjust friction, and observe how objects move in real time.The simulation is designed to be easy for new users: you start by pressing the Add Object button to create one or more objects on the screen. After selecting an object from the list, you can change its mass, friction, or toggle gravity to see how these settings affect its movement. You can then apply forces using the X and Y sliders or buttons, and the object will move in real time while showing its trail, velocity vector, and force direction. The Start, Pause, and Reset buttons control the simulation, letting you experiment freely and observe how different physics settings change the motion. When you finish, a summary appears at the bottom of the screen showing each object’s final position, velocity, acceleration, and distance traveled, helping you understand the results of your experiment.
 
 ---
 
